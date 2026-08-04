@@ -1,6 +1,8 @@
 import os
 import mysql.connector
 
+print("NEW DB.PY LOADED")
+
 def get_connection():
     return mysql.connector.connect(
         host=os.getenv("MYSQLHOST"),
