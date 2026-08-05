@@ -1,7 +1,10 @@
 import os
 import mysql.connector
 
-print("NEW DB.PY LOADED")
+print("MYSQLHOST =", os.getenv("MYSQLHOST"))
+print("MYSQLPORT =", os.getenv("MYSQLPORT"))
+print("MYSQLUSER =", os.getenv("MYSQLUSER"))
+print("MYSQLDATABASE =", os.getenv("MYSQLDATABASE"))
 
 def get_connection():
     return mysql.connector.connect(
